@@ -1,0 +1,19 @@
+.nav-link{
+    font: bolder 35px 'Bahnschrift Light';
+    font-weight: 900;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #cf6209;
+} 
+
+.navbar-brand span{
+    font: bold 35px 'Bahnschrift Light';
+    font-weight: 900;
+}
+
+.nav-custom{
+    /* background-color: #f8d975; */
+    background-color: rgb(243,188,76)
+    /* background-image: linear-gradient( white 5%, rgb(243,188,76) 100%); */
+}
