@@ -32,7 +32,8 @@ footer{
  
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Bahnschrift Light', cursive;
+	font: normal 40px 'Bahnschrift Light', cursive;
+	font-weight: 900;
 	margin: 0;
 }
  
@@ -133,7 +134,7 @@ footer{
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 18px;
+	font-size: 30px;
 	font-weight: bold;
 	margin-bottom: 20px;
 }

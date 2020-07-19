@@ -1,164 +1,3 @@
-{{-- @extends('layouts.app')
-@section('head_extra')
-{{-- font: normal 20px 'Cookie', cursive; 
-  
-<style>
-body {
-  font: normal 15px 'Cookie', cursive;; 
-    }
-.titlebox{
-  float: left;
-  padding: 0 5px;
-  margin: -20px 0 0 30px;
-  background: #000;
-  border: 2px solid #FFF;
-  
-}
-
-
-</style>
-@endsection
-@section('content') 
-<div style="background-image: url('../images/menu/menubg2.jpg'); background-repeat: repeat;">
-    <br>
-    
-    <div class="container">
-          <div class="row">
-      
-      <div class="col-sm-4">
-        <h2 style="color: #ffffff;
-        font: normal 36px 'Cookie', cursive;
-        margin: 0; text-align: center;">
-        Food<span style="color: rgb(189, 21, 21)">स्थल</span> Menu</h2>        
-    
-        <img src="../images/menu/line.png" class="img-fluid mx-auto d-block">
-        <img src="../images/menu/rice.png" class="img-fluid"><br>
-        <div class="d-lg-none">
-          <img src="../images/menu/sep1.png" class="img-fluid mx-auto d-block" ><br>
-                </div>
-                <div class="d-none d-lg-block"><br><img src="../images/menu/emb.png" class="img-fluid mx-auto d-block" ></div>
-        
-        
-      </div>
-      <div class="col-sm">  
-        <div id="content" style="	border: 2px solid #FFF;
-        padding: 10px;
-        color: white;">
-            <div class="titlebox">Maharashtrian</div>
-            <ul>
-              <br>
-              <li>Pav Bhaji <span style="float:right;">50/-</span></li>
-              <li>Poha<span style="float:right;">70/-</span></li>
-              <li>Misal Pav<span style="float:right;">75/-</span></li>
-              <li>Upma<span style="float:right;">40/-</span></li>
-            </ul>
-            </div>
-            <div>&nbsp;</div>
-            <div id="content" style="	border: 2px solid #FFF;
-        padding: 10px;
-        color: white;">
-            <div class="titlebox">South-Indian</div>
-            <ul>
-              <br>
-              <li>Plain Dosa <span style="float:right;">30/-</span></li>
-              <li>Masala Dosa<span style="float:right;">50/-</span></li>
-              <li>Idli<span style="float:right;">35/-</span></li>
-              <li>Medu Vada<span style="float:right;">55/-</span></li>
-            </ul>
-            </div>
-            <div>&nbsp;</div>
-            <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox">Snacks</div>
-                <ul>
-                  <br>
-                  <li>Vada Pav<span style="float:right;">20/-</span></li>
-                  <li>Samosa<span style="float:right;">15/-</span></li>
-                  <li>Cutlets<span style="float:right;">50/-</span></li>
-                  <li>Chhole Pattis<span style="float:right;">40/-</span></li>
-                </ul>
-                </div>
-                <div>&nbsp;</div>
-                <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox" >Cakes</div>
-                <ul>
-                  <br>
-                  <li>Black Forest<span style="float:right;">250/-</span></li>
-                  <li>Vanilla cupcakes<span style="float:right;">70/-</span></li>
-                  <li>Red Velvet<span style="float:right;">450/-</span></li>
-                  <li>Oreo Cheesecake<span style="float:right;">470/-</span></li>
-                </ul>
-                </div>
-                <div>&nbsp;</div>
-
-          </div>
-
-          <div class="col-sm">  
-            <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox">Chinese</div>
-                <ul>
-                  <br>
-                  <li>Schezwan Noodles<span style="float:right;">70/-</span></li>
-                  <li>Hakka Noodles<span style="float:right;">80/-</span></li>
-                  <li>Manchow Soup<span style="float:right;">50/-</span></li>
-                  <li>Triple Schezwan Rice<span style="float:right;">120/-</span></li>
-                </ul>
-                </div><div>&nbsp;</div>
-                <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox">Italian</div>
-                <ul>
-                  <br>
-                  <li>Pasta<span style="float:right;">70/-</span></li>
-                  <li>Bruschetta<span style="float:right;">70/-</span></li>
-                  <li>Risotta<span style="float:right;">100/-</span></li>
-                  <li>Spaghetti<span style="float:right;">95/-</span></li>
-                </ul>
-                </div><div>&nbsp;</div>
-                <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox">Beverages</div>
-                <ul>
-                  <br>
-                  <li>Pepsi<span style="float:right;">30/-</span></li>
-                  <li>Sprite<span style="float:right;">40/-</span></li>
-                  <li>Slice<span style="float:right;">30/-</span></li>
-                  <li>Fanta<span style="float:right;">25/-</span></li>
-                </ul>
-                </div><div>&nbsp;</div>
-                <div id="content" style="	border: 2px solid #FFF;
-            padding: 10px;
-            color: white;">
-                <div class="titlebox">Sweet dish</div>
-                <ul>
-                  <br>
-                  <li>Ice-Cream<span style="float:right;">50/-</span></li>
-                  <li>Pudding<span style="float:right;">40/-</span></li>
-                  <li>Chocolate Mousse<span style="float:right;">55/-</span></li>
-                  <li>Fruit Custard<span style="float:right;">70/-</span></li>
-                </ul>
-                </div><div>&nbsp;</div>
-
-
-              </div>
-
-      </div>
-      
-        <br>
-        <br>
-        
-    </div>
-  </div>
-
-  @endsection --}}
-
 @extends('layouts.app')
 
 @section('head_extra')
@@ -183,8 +22,8 @@ body {
 	}
 
 	.col-md-3{
-		background-color:rgb(21,21,21)  /*#1E1E20*/;
-		/*background-image : url({{ asset("/images/menu/menu_bg2.jpg") }});*/
+		/*background-color: #130d08; /*crgb(21,21,21) #1E1E20*/
+		background-image : linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),  url({{ asset("/images/background-menu.jpg") }}); 
 		color:white;
 		padding: 2%;
 	}
@@ -207,32 +46,37 @@ body {
 		text-align: center;
 	}
 	.col-md-9{
-		background-color: rgb(51,51,49);
-		/*background-image : url({{ asset("/images/menu/menu_bg.jpg") }}); */
+		/*background-color:  #724119; /*rgb(51,51,49);*/
+		background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url({{ asset("/images/background-menu3.jpg") }}); 
+
+		/*opacity: 0.5;
 		/*background-color: white;*/
 		padding: 2%;
 	}
     
 	.field_set{
-		border: 3px solid white;
+		border: 5px solid black;
 		border-radius: 0.5rem;
+		opacity:1;
 	}
 
 	legend{
 		width:auto;
 		font-family: Agency FB;
-		font-size: 35px;
-		font-weight: light;
-		font-size: 3rem;
+		font-weight: bold;
+		font-size: 3.5rem;
 	    margin-bottom: 0rem;
-		color: rgb(243,188,76);
+		/*color: rgb(243,188,76);*/
+		color: #cf6209;
 	}
     
 	h4{
 		font-family: Agency FB;
-		font-size: 35px;
+		font-size: 55px;
 		padding: 2%;
-		color: rgb(243,188,76);
+		/*color: rgb(243,188,76);*/
+		color:black;
+		font-weight: bold;
 	}
 
 	h5{
@@ -243,9 +87,10 @@ body {
 
     #full-menu ul{
 		font-family: Agency FB ;
-		font-weight: light;
+		font-weight: bolder;
 		font-size: 30px;
 		margin-bottom: 0.5rem;
+		color:black;
 	}
 
     @media screen and (max-width: 600px) {
@@ -256,10 +101,13 @@ body {
 	#full-menu ul{
 		font-size: 20px;	
 	}
+	h4{
+		font-size: 40px;
+	}
 	}
 
 	h4 span{
-    font-size: 40px;
+    font-size: 50px;
 	color:  #ff3333;
     }
 
@@ -278,13 +126,13 @@ body {
 			<div class="contact-info">
 				<img src="\images\menu\menu_img.png" alt="menu_img"/>
 				        &nbsp;
-                        &nbsp;
-				<h4>Food<span>ADIK</span>RESTAURANT</h4>
+                       
+				<h4>Food<span>ADIK</span>Restaurant</h4>
 
 				        &nbsp;
-                        &nbsp;
+                        
 				<!--<h5 class="font-weight-light text-center">Good Food Good Mood</h5>-->
-				<img id="mobile_view" src="\images\menu\chef_1.png" alt="menu_img"/>
+				{{-- <img id="mobile_view" src="\images\menu\chef_1.png" alt="menu_img"/> --}}
 				<!--<img id="mobile_view" src="images\menu\chef_3.png" alt="menu_img"/>-->
 				{{-- <img id="mobile_view" src="\images\menu\chef_2.png" alt="menu_img"/> --}}
 			</div>
@@ -628,6 +476,7 @@ body {
 
 
 		</div>
+		
 	</div>
 	</div>
 </section>

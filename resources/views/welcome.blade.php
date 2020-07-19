@@ -175,7 +175,7 @@
   
   <div id="home" class="intro route bg-image" style=" background-image: url(img/intro-bg-blur.jpg)" >
               
-              <p class="intro-subtitle"><span class="text-slider-items">Guidance on Preparing for Placements, Higher Studies and Career Guidance, Research and Innovations, Entrepreneurship Development, New Trends in Technology</span>
+              <p class="intro-subtitle"><span class="text-slider-items">WE ASSURE, HIGH QUALITY FOOD, TASTE, FAST SERVICE</span>
                 <strong class="text-slider"></strong></p>
         </div>
   <!--/ Intro Skew End /-->

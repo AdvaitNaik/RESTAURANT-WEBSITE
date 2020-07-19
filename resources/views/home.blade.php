@@ -3,9 +3,17 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="home/favicons/favicon-32x32.png">
     <link rel="manifest" href="home/favicons//manifest.json">
+
+    <link rel="stylesheet" href="../../assets/css/vendor.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+{{-- 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> --}}
+
+
 
 
     <style media="screen">
@@ -15,10 +23,12 @@
 
     body {
     cursor: default;
-    overflow-x: none; }
+    overflow-x: none; 
+    background-image: linear-gradient(90deg, white 55%, #f5ef9b 100%);
+    }
 
     body, button, input {
-    font-family: 'Poppins', sans-serif; }
+    font-family: 'Bahnschrift Light', sans-serif; }
 
     body > section:not([id="landing"]) {
     background-color: white; }
@@ -145,6 +155,7 @@
 
 
 
+
 </style>
 
 @endsection
@@ -192,12 +203,12 @@ window.onload = function(){
 </section>
                                        
 <br>
-                                            {{-- serve --}}
+                                        {{-- serve --}}
 
 <section id="short-menu">
     <div class="container">
         <header>
-            <h2 class="font-weight-light text-center">WE SERVE </h2>
+            <h2 class="font-weight-medium text-center" style="font-size:40px;font-weight: 900">WE SERVE </h2>
         </header>
     </div>
     <div class="container">
@@ -206,7 +217,7 @@ window.onload = function(){
                 <div class="card overflow-hidden">
                     <img class="cars-img"src="images/home\menu-iteams\Indianfood.jpg" alt="Indianfood">
                     <div class="position-absolute text-white text-center w-100 h-100 py-2 d-flex flex-column justify-content-center">
-                        <h3>Indian food</h3>
+                        <h3>INDIAN FOOD</h3>
                     </div>
                 </div>
             </div>
@@ -214,7 +225,7 @@ window.onload = function(){
                 <div class="card overflow-hidden">
                     <img class="cars-img"src="images/home\menu-iteams\Chinesefood.jpg" alt="Chinese food">
                     <div class="position-absolute text-white text-center w-100 h-100 py-2 d-flex flex-column justify-content-center">
-                            <h3>Chinese food</h3>
+                            <h3>CHINESE FOOD</h3>
                     </div>
                 </div>
             </div>
@@ -222,7 +233,7 @@ window.onload = function(){
                 <div class="card overflow-hidden">
                     <img class="cars-img"src="images/home\menu-iteams\SouthIndianFood.jpg" alt="SouthIndianFood">
                     <div class="position-absolute text-white text-center w-100 h-100 py-2 d-flex flex-column justify-content-center">
-                            <h3>South-indian <br>food</h3>
+                            <h3>SOUTH-INDIAN <br>FOOD</h3>
                     </div>
                 </div>
             </div>
@@ -230,7 +241,7 @@ window.onload = function(){
                 <div class="card overflow-hidden">
                     <img class="cars-img"src="images/home\menu-iteams\Juiceshake.jpg" alt="Juiceshake">
                     <div class="position-absolute text-white text-center w-100 h-100 py-2 d-flex flex-column justify-content-center">
-                        <h3>Juices <br> and <br>Shakes</h3>
+                        <h3>JUICES <br> AND <br>SHAKES</h3>
                     </div>
                 </div>
             </div>
@@ -238,8 +249,118 @@ window.onload = function(){
     </div>
 </section>
 
+<br>
+
+                                        <!-- masonry -->
+<section class="p-0 m-1">
+			<div class="container-full">
+				<ul class="masonry row gallery gutter-1 mb-0">
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal">
+						  <a src="storage/images/{{$items[0]->item_image}}" 
+						    style="background-image: url(storage/images/{{$items[0]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal equal-long">
+						  <a src="storage/images/{{$items[1]->item_image}}"  
+						    style="background-image: url(storage/images/{{$items[1]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal">
+						  <a src="storage/images/{{$items[2]->item_image}}" 
+						    style="background-image: url(storage/images/{{$items[2]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal equal-long">
+						  <a src="storage/images/{{$items[3]->item_image}}"  
+						    style="background-image: url(storage/images/{{$items[3]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal equal-long">
+						  <a src="storage/images/{{$items[4]->item_image}}" 
+						    style="background-image: url(storage/images/{{$items[4]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+					<li class="col-6 col-md-4" data-aos="zoom-in">
+						<figure class="photo equal">
+						  <a src="storage/images/{{$items[5]->item_image}}" 
+						    style="background-image: url(storage/images/{{$items[5]->item_image}});">
+						    <span class="photo-caption">
+						      <span>Photo Caption</span>
+						    </span>
+						  </a>
+						</figure>
+					</li>
+				</ul>
+			</div>
 </section>
+<!-- / masonry -->
+
+<br>
+
+                                     <!-- partners -->
+<section class="pt-0 separator-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col partners align-items-center">
+            <div class="owl-carousel" data-items="[6,4,2]" data-loop="true" data-autoplay="true">
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-1.png" alt="Logo">
+              </div>
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-2.png" alt="Logo">
+              </div>
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-3.png" alt="Logo">
+              </div>
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-4.png" alt="Logo">
+              </div>
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-5.png" alt="Logo">
+              </div>
+              <div class="logo">
+                <img src="../../assets/images/demo/logo/logo-6.png" alt="Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+    <!-- / partners -->
+
+</section>
+
 <script>
     function payauto(){}
 </script>
+@endsection
+
+@section('script_extra')
+<script src="../../assets/js/vendor.js"></script>
+<script src="../../assets/js/app.js"></script>
 @endsection
