@@ -42,7 +42,7 @@
                 #short-menu .card:hover > div { transform: translateX(0); }
                 .bg-image 
                 {
-                    background: linear-gradient(rgba(20,20,20,.5), rgba(20,20,20,.5)),
+                    background: /*linear-gradient(rgba(20,20,20,.5), rgba(20,20,20,.5)),*/
                         url("images/HOTEL1.jpg");
                     height: 700px; 
                     background-position: center;
@@ -118,8 +118,9 @@
                 .jumbotron{
                     padding: 20px;
                     margin-bottom: 0px;
-                    /*background-color: #f5ef9b;*/
-                    background-image: linear-gradient(90deg, white 35%, #f5ef9b 100%);
+                    /*background-color: #f5ef9b;
+                    background-image: linear-gradient(90deg, white 35%, #f5ef9b 100%);*/
+                    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),  url({{ asset("/images/background-menu3.jpg") }});
 	            }
 
                 .crop-image{
@@ -152,6 +153,29 @@
   display: none;
 }
 
+/*PARTNERS*/
+  @media screen and (max-width: 600px) {
+    #mobile_view{
+		visibility: hidden;
+		display: none;
+	}
+}
+
+#mobile_view{
+   background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),  url({{ asset("/images/background-menu3.jpg") }});
+}
+
+/*
+.carousel__cell:nth-child(9n+1) { background-image : url({{ asset("/images/partners_logo/logo-1.png") }}); }
+.carousel__cell:nth-child(9n+2) { background-image : url({{ asset("/images/partners_logo/logo-2.png") }}); }
+.carousel__cell:nth-child(9n+3) { background-image : url({{ asset("/images/partners_logo/logo-3.png") }}); }
+.carousel__cell:nth-child(9n+4) { background-image : url({{ asset("/images/partners_logo/logo-4.png") }}); }
+.carousel__cell:nth-child(9n+5) { background-image : url({{ asset("/images/partners_logo/logo-5.png") }}); }
+.carousel__cell:nth-child(9n+6) { background-image : url({{ asset("/images/partners_logo/logo-6.png") }}); }
+.carousel__cell:nth-child(9n+7) { background-image : url({{ asset("/images/partners_logo/logo-1.png") }}); }
+.carousel__cell:nth-child(9n+8) { background-image : url({{ asset("/images/partners_logo/logo-2.png") }}); }
+.carousel__cell:nth-child(9n+0) { background-image : url({{ asset("/images/partners_logo/logo-3.png") }}); }
+*/
 
 </style>
 </head>
@@ -195,8 +219,11 @@
                 @include('inc.assure')
             </section>
             
+            {{-- partners --}}
+            <section id="mobile_view">
+                @include('inc.partners')
+            </section>
            
-              <br>
               {{-- footer --}}
               <section>
               @include('inc.footer')
