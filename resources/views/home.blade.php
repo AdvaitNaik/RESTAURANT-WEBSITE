@@ -38,7 +38,12 @@
     figure, p {
     margin: 0; }
 
-    #short-menu { padding: 3.6rem 0; }
+    #short-menu { 
+        padding: 3.6rem 0;
+        /*background-color: white; 
+        background-image : linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),  url({{ asset("/images/background-menu.jpg") }});
+        */
+    }
     #short-menu img {
     height: 190px;
     object-fit: cover;
@@ -95,7 +100,11 @@
     .controller span:hover {
     opacity: .4; }
 
-
+        #masonry { 
+            /*background-color: white; 
+            background-image : linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),  url({{ asset("/images/background-menu5.jpg") }});
+            */
+        }
 
 </style>
 
@@ -144,12 +153,13 @@ window.onload = function(){
 </section>
                                        
 <br>
+<br>
                                         {{-- serve --}}
 
 <section id="short-menu">
     <div class="container">
         <header>
-            <h2 class="font-weight-medium text-center" style="font-size:40px;font-weight: 900">WE SERVE </h2>
+            <h2 class="font-weight-medium text-center" style="color:black;font-size:40px;font-weight: 900">WE SERVE </h2>
         </header>
     </div>
     <div class="container">
@@ -192,8 +202,23 @@ window.onload = function(){
 
 <br>
 
-                                      
+                                        {{-- MASONRY --}}
+<section id="masonry">
+    <br>
+    <div class="container">
+        <header>
+            <h2 class="font-weight-medium text-center" style="color:black;font-size:40px;font-weight: 900">BEST-SELLER </h2>
+        </header>
+    </div>
+    <br>
+    <div class="container-fluid">
 
+    <section>
+        @include('inc.masonry') 
+    </section>
+
+    </div>
+<br>
 </section>
 
 <script>

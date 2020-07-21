@@ -47,7 +47,7 @@
             {{-- @include('inc.messages') --}}
             @yield('content')
         </main>
-        <br>
+        
         @include('inc.footer')
     </div>
 

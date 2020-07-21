@@ -127,7 +127,7 @@
 				<img src="\images\menu\menu_img.png" alt="menu_img"/>
 				        &nbsp;
                        
-				<h4>Food<span>ADIK</span>Restaurant</h4>
+				<h4><span>ADIK</span>Restaurant</h4>
 
 				        &nbsp;
                         
