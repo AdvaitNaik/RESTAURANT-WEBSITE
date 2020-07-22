@@ -74,12 +74,12 @@
 		<img {{--src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" --}} src="storage/images/{{$items[4]->item_image}}" alt="">
 	</div>
 
-	<div id="hide" class="zoom">
+	<div id="hide" class="wide zoom">
 		<img {{--src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" --}} src="storage/images/{{$items[3]->item_image}}" />
 	</div>
-	<div class="wide zoom">
-		<img src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" {{--src="storage/images/{{$items[3]->item_image}}" --}}  alt="">
-	</div>
+	{{-- <div id="hide" class="wide zoom">
+		<img {{--src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"  src="storage/images/{{$items[2]->item_image}}"  alt="">
+	</div> --}}
 	{{-- <div class="big">
 		<img src="https://images.unsplash.com/photo-1572914857229-37bf6ee8101c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80" alt="" />
 	</div>

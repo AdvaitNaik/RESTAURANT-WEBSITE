@@ -22,7 +22,7 @@
     cursor: default;
     overflow-x: none; 
     /* background-image: linear-gradient(90deg, white 55%, #f5ef9b 100%);*/
-    background-image : linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),  url({{ asset("/images/background-menu5.jpg") }});
+    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),  url({{ asset("/images/background-menu5.jpg") }});
     }
 
     body, button, input {

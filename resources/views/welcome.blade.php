@@ -13,6 +13,30 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+<!-- Styles -->
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+{{-- <!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="assets/owl-carousel/owl.carousel.js"></script> --}}
+{{-- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+  --}}
+
         <style media="screen">
                 ::placeholder, a, a:hover { color: inherit; }
 
@@ -153,30 +177,31 @@
   display: none;
 }
 
-/*PARTNERS*/
+/*PARTNERS
   @media screen and (max-width: 600px) {
     #mobile_view{
 		visibility: hidden;
 		display: none;
 	}
-}
+}*/
 
 #mobile_view{
    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),  url({{ asset("/images/background-menu3.jpg") }});
 }
 
-/*
-.carousel__cell:nth-child(9n+1) { background-image : url({{ asset("/images/partners_logo/logo-1.png") }}); }
-.carousel__cell:nth-child(9n+2) { background-image : url({{ asset("/images/partners_logo/logo-2.png") }}); }
-.carousel__cell:nth-child(9n+3) { background-image : url({{ asset("/images/partners_logo/logo-3.png") }}); }
-.carousel__cell:nth-child(9n+4) { background-image : url({{ asset("/images/partners_logo/logo-4.png") }}); }
-.carousel__cell:nth-child(9n+5) { background-image : url({{ asset("/images/partners_logo/logo-5.png") }}); }
-.carousel__cell:nth-child(9n+6) { background-image : url({{ asset("/images/partners_logo/logo-6.png") }}); }
-.carousel__cell:nth-child(9n+7) { background-image : url({{ asset("/images/partners_logo/logo-1.png") }}); }
-.carousel__cell:nth-child(9n+8) { background-image : url({{ asset("/images/partners_logo/logo-2.png") }}); }
-.carousel__cell:nth-child(9n+0) { background-image : url({{ asset("/images/partners_logo/logo-3.png") }}); }
+                              
+/*                                            /*OWL CAROUSEL
+  .owl-carousel .item {
+   /* height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
+  }
+  .owl-carousel .item h4 {
+    color: #FFF;
+    font-weight: 400;
+    margin-top: 0rem;
+   }
 */
-
 </style>
 </head>
 
@@ -218,12 +243,17 @@
             <section>
                 @include('inc.assure')
             </section>
-            
+            <br>
+
             {{-- partners --}}
             <section id="mobile_view">
+            <br>
+            <br>
                 @include('inc.partners')
+            <br>
+            <br>
             </section>
-           
+        
               {{-- footer --}}
               <section>
               @include('inc.footer')
@@ -238,7 +268,10 @@
 <!-- JavaScript Libraries -->
 <script src="http://vesitreach.ves.ac.in/css/lib/typed/typed.min.js"></script>
 
-    <script>
+{{-- <script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script> --}}
+
+<script>
 	/*--/ Star Typed /--*/
 	if ($('.text-slider').length == 1) {
     var typed_strings = $('.text-slider-items').text();
@@ -250,10 +283,7 @@
 			backSpeed: 30
 		});
 	}
-
-
-                
-     </script>
+</script>
 
 
     </body>
