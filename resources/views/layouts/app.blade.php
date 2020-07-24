@@ -42,7 +42,7 @@
 
     <div id="app">
         @include('inc.navbar')
-        <br>
+        {{-- <br> --}}
         <main>
             {{-- @include('inc.messages') --}}
             @yield('content')

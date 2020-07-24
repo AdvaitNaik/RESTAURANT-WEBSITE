@@ -14,7 +14,9 @@
 
 body,.back
 {
-    background-image: url('../images/menu/menubg2.jpg');
+   /* background-image: url('../images/menu/menubg2.jpg');*/
+    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url({{ asset("/images/background-menu3.jpg") }}); 
+
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -31,13 +33,13 @@ body,.back
         @foreach($cuisines as $cuisine)
             <li class="nav-item  mx-2">
                 <div class="checkbox">
-                    <label style="color: white; font-size:20px"><input type="checkbox" class="cuisine" value="{{$cuisine->cuisine_name}}" > {{$cuisine->cuisine_name}}</label>
+                    <label style="color: white; font-size:35px;text-transform:uppercase;"><input type="checkbox" class="cuisine" value="{{$cuisine->cuisine_name}}" > {{$cuisine->cuisine_name}}</label>
                </div>
             </li> 
         @endforeach
         <li class="nav-item  mx-2">
             <div class="checkbox">
-                <label style="color: white; font-size:20px"><input type="checkbox" class="cuisine" value="combos" > Combos</label>
+                <label style="color: white; font-size:35px"><input type="checkbox" class="cuisine" value="combos" > COMBOS</label>
            </div>
         </li>
         

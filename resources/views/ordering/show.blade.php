@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <input type="number" class="form-control" id="quantity" name='quantity' placeholder="Enter Quantity">
                     </div>
-                    <input type="submit" class="btn btn-primary" value="Add to Cart">
+                    <input type="submit" class="btn btn-primary" value="ADD TO CART">
             {!! Form::close() !!}
             </div>
     </div>
@@ -50,7 +50,7 @@
                     <div class="form-group">
                         <input type="number" class="form-control" id="quantity" name='quantity' placeholder="Enter Quantity">
                     </div>
-                    <input type="submit" class="btn btn-primary" value="Add to Cart" name='combo'>
+                    <input type="submit" class="btn btn-primary" value="ADD TO CART" name='combo'>
             {!! Form::close() !!}
             </div>
         </div>
@@ -73,7 +73,7 @@
                 <div class="form-group">
                     <input type="number" class="form-control" id="quantity" name='quantity' placeholder="Enter Quantity">
                 </div>
-                <input type="submit" class="btn btn-primary" value="Add to Cart">
+                <input type="submit" class="btn btn-primary" value="ADD TO CART">
             {!! Form::close() !!}
             </div>
         </div>
