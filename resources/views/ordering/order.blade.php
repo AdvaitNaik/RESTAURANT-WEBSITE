@@ -2,7 +2,8 @@
 @section('head_extra')
 
 <style>
-    .size
+
+.size
 {
     height:200px;
     width:100%;
@@ -15,17 +16,22 @@
 body,.back
 {
    /* background-image: url('../images/menu/menubg2.jpg');*/
-    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url({{ asset("/images/background-menu3.jpg") }}); 
-
+    background-image : linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url({{ asset("/images/background-menu.jpg") }}); 
+/*
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
+
+.nav-custom1{
+    background-color:#130d08;
+}
+
 </style>
 
 @endsection
 @section('content')
 
-<nav class=" navbar navbar-expand-lg navbar-dark bg-dark  ">
+<nav class="navbar navbar-expand-lg navbar-dark nav-custom1">
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-5">

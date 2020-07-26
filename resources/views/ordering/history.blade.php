@@ -1,7 +1,32 @@
 @extends('layouts.app')
-@section('content') 
+@section('head_extra')
 
-<table class="table table-striped table-dark">
+<style>
+body,.back
+{
+   /* background-image: url('../images/menu/menubg2.jpg');*/
+    background-image : linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url({{ asset("/images/background-menu.jpg") }}); 
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+.table-custom{
+    background-color:white;
+    color:#130d08;
+    font-size:30px;
+    font-family:'Bahnschrift Light';
+}
+
+</style>
+
+@endsection
+
+
+
+@section('content') 
+<br>
+<div class="container-fluid">
+<table class="table table-striped table-custom">
     <thead>
       <tr>
         <th scope="col">ORDER ID</th>
@@ -18,12 +43,12 @@
             <br>
         <span>
             @if($order->payment == 0)
-                <span style="font-size: 12px; color: red"><b>PAYMENT PENDING</b></span>
+                <span style="font-size: 20px; color: red"><b>PAYMENT PENDING</b></span>
             @else
                 @if($order->status == 0)
-                    <span style="color: yellow; font-size: 12px"><b>TO BE SERVED</b></span>
+                    <span style="color: orange; font-size: 20px"><b>TO BE SERVED</b></span>
                 @else
-                    <span style="color:rgb(7, 250, 7); font-size: 12px"><b>ORDER READY</b></span>
+                    <span style="color:rgb(7, 250, 7); font-size: 20px"><b>ORDER READY</b></span>
                 @endif
             @endif
         </span>
@@ -33,7 +58,7 @@
         
         <td>
             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Items
+                ITEMS
             </button>
             <div class="dropdown-menu">
                 @php
@@ -61,6 +86,6 @@
         @endforeach
     </tbody>
   </table>
-
+<div>
 @endsection
 

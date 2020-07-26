@@ -1,12 +1,33 @@
 @extends('layouts.app')
 
-@section('content')
+@section('head_extra')
 
+<style>
+
+body,.back
+{
+   /* background-image: url('../images/menu/menubg2.jpg');*/
+    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url({{ asset("/images/background-menu3.jpg") }}); 
+}
+
+.nav-custom{
+    background-color:rgb(243,188,76);
+}
+
+</style>
+
+@endsection
+
+
+
+
+@section('content')
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">ADMIN DASHBOARD</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -28,22 +49,22 @@
     </div>
 @endif
 <br>
-<nav class=" navbar navbar-expand-lg navbar-dark bg-dark  ">
+<nav class=" navbar navbar-expand-lg navbar-light nav-custom">
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto " >
         
         <li class="nav-item" style="text-align: center">
-            <a  class="nav-link" onclick="myFunction4()">Add Cuisine</a>
+            <a  class="nav-link" onclick="myFunction4()">ADD-CUISINE</a>
         </li>
         <li class="nav-item" style="text-align: center">
-            <a  class="nav-link" onclick="myFunction1()">Add Item</a>
+            <a  class="nav-link" onclick="myFunction1()">ADD-ITEM</a>
         </li>
         <li class="nav-item" style="text-align: center">
-            <a  class="nav-link" onclick="myFunction2()">Add Combo</a> 
+            <a  class="nav-link" onclick="myFunction2()">ADD-COMBO</a> 
         </li>
         <li class="nav-item" style="text-align: center">
-            <a class="nav-link"  onclick="myFunction3()" >Today's Special</a>      
+            <a class="nav-link"  onclick="myFunction3()" >TODAY's-SPECIAL</a>      
         </li>
         
     </ul>
@@ -52,7 +73,7 @@
 </nav>
 <br>
                                         <!-- ADD Cusine -->
-<div class="container-fluid" id="4" style="display:none;">
+<div class="container" id="4" style="display:none;">
 
     {!! Form::open(['action' => 'AdminController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
 
@@ -66,7 +87,7 @@
 </div>
 
                                  <!-- ADD ITEM -->
-<div class="container-fluid" id="1" style="display:none;">
+<div class="container" id="1" style="display:none;">
 
         {!! Form::open(['action' => 'AdminController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
@@ -107,7 +128,7 @@
 
 
                        <!-- ADD COMBO -->
-<div class="container-fluid" id="2" style="display:none;">
+<div class="container" id="2" style="display:none;">
 
         {!! Form::open(['action' => 'AdminController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
 
@@ -136,7 +157,7 @@
 
                        <!-- TODAYS SPECIAL -->
 
-<div class="container-fluid" id="3" style="display:none;">
+<div class="container" id="3" style="display:none;">
 
     {!! Form::open(['action' => 'AdminController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
    

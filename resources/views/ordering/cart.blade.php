@@ -1,4 +1,28 @@
 @extends('layouts.app')
+@section('head_extra')
+
+<style>
+body,.back
+{
+   /* background-image: url('../images/menu/menubg2.jpg');*/
+    background-image : linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url({{ asset("/images/background-menu3.jpg") }}); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-custom{
+    background-color:#130d08;
+    color:white;
+    font-size:30px;
+    font-family:'Bahnschrift Light';
+}
+
+</style>
+
+@endsection
+
+
+
 @section('content') 
 
 @if (session('message'))
@@ -6,13 +30,15 @@
         {{ session('message') }}
     </div>
 @endif
-<table class="table table-striped table-dark">
+<br>
+<div class="container-fluid">
+<table class="table table-striped table-custom">
     <thead>
       <tr>
-        <th scope="col">Item</th>
-        <th scope="col">Price per item</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Options</th>
+        <th scope="col">ITEM</th>
+        <th scope="col">PRICE PER ITEM</th>
+        <th scope="col">QUANTITY</th>
+        <th scope="col">OPTIONS</th>
       </tr>
     </thead>
     <tbody>
@@ -48,6 +74,7 @@
         @endforeach
     </tbody>
   </table>
+  <div>
   {!! Form::open(['route' => ['ordering.save' , 'method' => 'POST']]) !!}
 
 
