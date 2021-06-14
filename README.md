@@ -1,3 +1,12 @@
+We are going to build a software restaurant automation system that will have
+several features such as:
+ Stock management
+ Internet online reservation
+ Online ordering via network enabled handheld computer
+ Customer management
+ Accounting
+ Executive information system 
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
