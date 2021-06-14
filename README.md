@@ -1,4 +1,4 @@
-We are going to build a software restaurant automation system that will have
+Build a software restaurant automation website that will have
 several features such as:
 - Stock management
 - Internet online reservation
